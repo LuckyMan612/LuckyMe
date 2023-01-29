@@ -15,6 +15,7 @@ addTaskButton.addEventListener("click", function() {
   taskItem.addEventListener("click", function() {
     taskItem.style.textDecoration = "line-through";
     completedList.appendChild(taskItem);
+    taskList.removeChild(taskItem);
     completedList.style.display = "block";
   });
   taskInput.value = "";
